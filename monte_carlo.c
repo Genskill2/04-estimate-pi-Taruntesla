@@ -3,7 +3,20 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int);
+float mc_pi(int t){
+ int s,c;
+ float pi;
+ for(int i=1;i<=t;i++){
+ float x = frandom();
+ float y = frandom();
+ if(((x*x)+(y*y))<=1)
+   c+=1;
+ else
+   s+=1;
+}
+ pi=4*(c/s);
+ return pi;
+}
 
 float frandom() {
   long int q = random();
