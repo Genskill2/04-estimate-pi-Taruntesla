@@ -15,7 +15,7 @@ float mc_pi(int t){
  for(int i=1;i<=t;i++){
  float x = frandom();
  float y = frandom();
- if(((x*x)+(y*y))<=1.0)
+ if((pow(x,2)+pow(y,2))<=1.0)
   c+=1.0;
   
 }
