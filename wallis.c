@@ -3,7 +3,14 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int x);
+float wallis_pi(int x){
+float epi=2;
+  for(int i=1;i<=x;i++){
+     int k=4*i*i;
+     epi=epi*(k/(k-1));
+    }
+    return epi;
+}
 
 int main(void) {
   float pi;
@@ -24,11 +31,3 @@ int main(void) {
   }
 }
 
-float wallis_pi(int x){
- float epi=2;
-  for(int i=1;i<=x;i++){
-     int k=4*i*i;
-     epi=epi*(k/(k-1));
-    }
-    return epi;
-}
