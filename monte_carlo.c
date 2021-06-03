@@ -16,8 +16,8 @@ float mc_pi(int t){
  float x = frandom();
  float y = frandom();
  if(((x*x)+(y*y))<=1)
-   c+=1;
-   s+=1;
+ c+=1;
+ s+=1;
   }
  epi=4*(c/s);
  return epi;
