@@ -9,12 +9,9 @@ float mc_pi(int t){
  for(int i=1;i<=t;i++){
  float x = frandom();
  float y = frandom();
- if(((x*x)+(y*y))<=1){
+ if(((x*x)+(y*y))<=1)
    c+=1;
-   }
- else{
    s+=1;
-  }
   }
  epi=4*(c/s);
  return epi;
