@@ -25,9 +25,9 @@ int main(void) {
 }
 
 float wallis_pi(int x){
-float epi=2;
+float epi=1;
 for(int i=1;i<=x;i++){
 epi*=((4*i*i)/(4*i*i-1));
 }
-return epi;
+return epi*2;
 }
