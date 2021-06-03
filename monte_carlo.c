@@ -4,18 +4,20 @@
 #include <math.h>
 
 float mc_pi(int t){
- int s,c;
- float pi;
+ 
+ float epi,s,c;
  for(int i=1;i<=t;i++){
  float x = frandom();
  float y = frandom();
- if(((x*x)+(y*y))<=1)
+ if(((x*x)+(y*y))<=1){
    c+=1;
- else
+   }
+ else{
    s+=1;
-}
- pi=4*(c/s);
- return pi;
+  }
+  }
+ epi=4*(c/s);
+ return epi;
 }
 
 float frandom() {
