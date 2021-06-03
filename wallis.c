@@ -6,7 +6,7 @@
 float wallis_pi(int x){
 float epi=2;
   for(int i=1;i<=x;i++){
-     int k=4.0*i*i;
+     float k=4.0*i*i;
      epi=epi*(k/(k-1));
     }
     return epi;
