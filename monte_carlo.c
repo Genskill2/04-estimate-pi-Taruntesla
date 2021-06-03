@@ -11,12 +11,12 @@ float frandom() {
 
 float mc_pi(int t){
  
- float epi,c;
+ float epi=0,c=0;
  for(int i=1;i<=t;i++){
  float x = frandom();
  float y = frandom();
- if((pow(x,2)+pow(y,2))<=1.0)
-  c+=1.0;
+ if((x*x+y*y)<=1)
+  c+=1;
   
 }
  epi=4.0*(c/t);
